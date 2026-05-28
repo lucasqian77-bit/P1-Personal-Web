@@ -138,3 +138,17 @@ main {
   color: white;
   border-color: white;
 }
+
+@media (max-width: 600px) {
+  .skill-card {
+    flex: 1 1 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+}
