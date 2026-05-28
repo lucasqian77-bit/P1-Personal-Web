@@ -1,7 +1,8 @@
 export function applySavedTheme() {
   const savedTheme = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  if (savedTheme === "dark") {
+  if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
     document.body.classList.add("dark");
   }
 }
